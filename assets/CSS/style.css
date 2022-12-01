@@ -13,3 +13,21 @@ body{
     margin-top: 1.7rem;
     margin-bottom:2.3rem;
 }
+.tip-calculator{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1.4rem 1.4rem 0 0;
+}
+label{
+    color:hsl(186, 14%, 43%);
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+input{
+    border:none;
+    outline:none;
+    padding:5px;
+    padding-right: 18px;
+}
