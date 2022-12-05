@@ -28,3 +28,13 @@ function peopleInputFun(){
     console.log(peopleValue)
 }
 
+function handleClick(event){
+    tips.forEach(function(val){
+        val.classList.remove('active-tip');
+        if (event.target.innerHTML == val.innerHTML){
+            val.classList.add('active-tip');
+            tipValue = parseFloat(val.innerHTML)/100;
+        }
+    })
+    console.log(tipValue)
+}
