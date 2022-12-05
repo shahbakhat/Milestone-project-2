@@ -47,6 +47,7 @@ input {
 .bill-input {
     background-image: url('/assets/css/images/icon-dollar.svg');
     margin-bottom: 36px;
+    display:flex;
 }
 
 .tip {
