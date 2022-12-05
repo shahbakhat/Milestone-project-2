@@ -25,7 +25,7 @@ function billInputFun(){
 
 function peopleInputFun(){
     peopleValue = parseFloat(peopleInput.value)
-    console.log(peopleValue)
+    calculateTip()
 }
 
 function handleClick(event){
@@ -36,5 +36,15 @@ function handleClick(event){
             tipValue = parseFloat(val.innerHTML)/100;
         }
     })
-    console.log(tipValue)
+   calculateTip()
+}
+
+function calculateTip(){
+    if(peopleValue >= 1){
+        let tipAmount = (billValue * tipValue) / peopleValue;
+        let total = (billValue * tipAmount) / peopleValue;
+        tipPerPerson.innerHTML = '$' +tipAmount.toFixed(2);
+        totalPerPerson.innerHTML = '$' +total.toFixed(2);
+    }
+
 }
