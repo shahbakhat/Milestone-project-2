@@ -9,20 +9,17 @@ body {
     background-color: hsl(185, 41%, 84%);
     font-family: "Space Mono", monospace;
 }
-.main-heading
-{
-   color: hsl(183, 100%, 15%);
-   font-weight: bolder;
-   font-size:1.5rem;
-   margin-bottom: 4rem;
-   letter-spacing:5px;
-}
-.result-heading{
+
+.main-heading {
+    color: hsl(183, 100%, 15%);
     font-weight: bolder;
-    font-size:2.5rem;
-    margin-bottom: 2rem;
+    letter-spacing: 5px;
+}
+
+.result-heading {
+    font-weight: bolder;
     text-align: center;
-    letter-spacing:5px;
+    letter-spacing: 5px;
 }
 
 .logo {
@@ -40,11 +37,13 @@ body {
     padding: 2rem;
     border-radius: 1.4rem 1.4rem 0 0;
 }
-p{
+
+p {
     color: hsl(186, 14%, 43%);
     font-weight: 700;
     margin-bottom: 0.3rem;
 }
+
 label {
     color: hsl(186, 14%, 43%);
     font-weight: 700;
@@ -69,7 +68,7 @@ input {
 .bill-input {
     background-image: url('/assets/css/images/icon-dollar.svg');
     margin-bottom: 36px;
-    display:flex;
+    display: flex;
 }
 
 .tip {
@@ -106,7 +105,7 @@ input {
 
 .result {
     background-color: hsl(183, 100%, 15%);
-    color:white;
+    color: white;
     padding: 39px 21px;
     border-radius: 12px;
     margin-top: 3rem;
@@ -123,7 +122,7 @@ input {
 
 .person {
     font-size: 20px;
-    color:white;
+    color: white;
     font-weight: 700;
 }
 
@@ -156,15 +155,16 @@ input {
 
 .error {
     color: red;
-    display:none;
+    display: none;
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (min-width: 375px) {
     input {
         width: 300px;
         padding: 9px;
         background-position: 17px 18px;
     }
+
     .tip-calculator {
         background-color: white;
         display: flex;
@@ -227,12 +227,14 @@ input {
         display: flex;
         flex-direction: column;
         align-content: space-between;
-        padding:48px 38px;
+        padding: 48px 38px;
     }
-    .amount{
+
+    .amount {
         font-size: 55px;
     }
-    .reset{
+
+    .reset {
         padding: 13px 0 13px 0;
         margin-top: auto;
     }
