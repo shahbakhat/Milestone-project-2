@@ -10,7 +10,7 @@ peopleInput.addEventListener("input", peopleInputFun)
 billInput.value = "0.0";
 peopleInput.value = "1";
 tipPerPerson.innerHTML = "$" + (0.0).toFixed(2);
-tipPerPerson.innerHTML = "$" + (0.0).toFixed(2);
+totalPerPerson.innerHTML = "$" + (0.0).toFixed(2);
 
 tips.forEach(function(val)
 {val.addEventListener("click",handleClick)})
@@ -18,6 +18,7 @@ tips.forEach(function(val)
 
 let billValue = 0.0;
 let peopleValue = 1;
+let tipValue = 0.15;
 
 function billInputFun(){
     billValue = parseFloat(billInput.value)
@@ -42,10 +43,10 @@ function handleClick(event){
 
 function calculateTip(){
     if(peopleValue >= 1){
-        let tipAmount = (billValue * tipValue) / peopleValue;
-        let total = (billValue * tipAmount) / peopleValue;
-        tipPerPerson.innerHTML = '$' +tipAmount.toFixed(2);
-        totalPerPerson.innerHTML = '$' +total.toFixed(2);
+        let tipAmount = (billValue * tipValue) / peopleValue
+        let total = (billValue * tipAmount) / peopleValue
+        tipPerPerson.innerHTML = "$" + tipAmount.toFixed(2);
+        totalPerPerson.innerHTML = "$" + total.toFixed(2);
     }
 
 }
