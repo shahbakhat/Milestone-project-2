@@ -20,9 +20,10 @@
     </div>
     <div class="tip-calculator">
       <section class="partOne">
-        <label for="">Bill</label>
+        <h3 class="main-heading">Tip Calculator</h3>
+        <label for="bill-input">Bill</label>
         <input type="number" class="input bill-input" id="bill-input" />
-        <label for="">Select Tip %</label>
+        <p class="select-tip">Select Tip %</p>
         <div class="tip">
           <div class="tips tip-5">5%</div>
           <div class="tips tip-10">10%</div>
@@ -34,12 +35,13 @@
           </div>
         </div>
         <div class="peopleLabel people-label">
-          <label for="">Number of People</label>
-          <label for="" class="error">Can't Be Zero</label>
+          <label for="people">Number of People</label>
+          <p class="error">Can't Be Zero</p>
         </div>
-        <input type="number" class="input people-input" />
+        <input type="number" id="people" class="input people-input" />
       </section>
       <section class="result">
+        <h3 class="result-heading">Results</h3>
         <div class="tip-amount">
           <div class="text">
             <p>Tip Amount</p>
