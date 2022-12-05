@@ -20,3 +20,8 @@ function billInputFun(){
     console.log(billValue)
 }
 
+function peopleInputFun(){
+    peopleValue = parseFloat(peopleInput.value)
+    console.log(peopleValue)
+}
+
