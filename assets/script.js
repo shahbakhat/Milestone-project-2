@@ -11,3 +11,12 @@ peopleInput.value = "1";
 tipPerPerson.innerHTML = "$" + (0.0).toFixed(2);
 tipPerPerson.innerHTML = "$" + (0.0).toFixed(2);
 
+
+let billValue = 0.0;
+let peopleValue = 1;
+
+function billInputFun(){
+    billValue = parseFloat(billInput.value)
+    console.log(billValue)
+}
+
