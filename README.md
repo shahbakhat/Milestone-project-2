@@ -102,6 +102,7 @@ responsiveness was tested on all  devices using
 *Google Chrom Dev Tools* and *[responsivedesignchecker.com](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fshahbakhat.github.io%2FMilestone-project-2%2F&width=1400&height=700)* . All buttons were tested if they are properly linked to the relative link and accessibility test was done for visual effects. all the color contrasts were tested using [webaim.org](https://webaim.org/resources/contrastchecker/).
 HTML was tested using W3C [HTML validator](https://validator.w3.org/).
 To test CSS code the [Jigsaw](https://jigsaw.w3.org/css-validator/) was used.
+To test javaScript code [jSHINT](https://jshint.com/) was used.
 
 
 | Tests  |      Expectations      | Pass/Fail |
