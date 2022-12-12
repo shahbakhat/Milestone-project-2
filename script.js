@@ -5,7 +5,7 @@ const totalPerPerson = document.getElementById("total-amount");
 const tips = document.querySelectorAll(".tips");
 const tipCustom = document.querySelector(".tip-custom");
 const resetBtn = document.querySelector(".reset");
-const error = document.querySelector(".error")
+const error = document.querySelector(".error");
 
 billInput.addEventListener("input", billInputFun);
 peopleInput.addEventListener("input", peopleInputFun);
@@ -33,12 +33,12 @@ function billInputFun() {
 function peopleInputFun() {
   peopleValue = parseFloat(peopleInput.value);
   if (peopleValue <1){
-    error.style.display="flex"
-    peopleInput.style.border = "thick solid red"
+    error.style.display="flex";
+    peopleInput.style.border = "thick solid red";
   }
   else{
-    error.style.display="none"
-    peopleInput.style.border = "none"
+    error.style.display="none";
+    peopleInput.style.border = "none";
   }
   calculateTip();
 }
