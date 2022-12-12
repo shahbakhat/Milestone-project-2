@@ -53,7 +53,7 @@ function tipInputFun() {
   });
   calculateTip();
 }
-/*15% button reset color*/
+/*15% button color reset / hover effect*/
 function handleClick(event) {
   tips.forEach(function (val) {
     val.classList.remove("active-tip");
@@ -64,7 +64,7 @@ function handleClick(event) {
     calculateTip();
   });
 }
-/*Tip calculation*/
+/* over Tip calculation*/
 function calculateTip() {
   if (peopleValue >= 1) {
     let tipAmount = (billValue * tipValue) / peopleValue;
