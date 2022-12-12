@@ -73,7 +73,7 @@ ___
 ### __Technologies Used__
 ____
 ### HTML
-The Layouts of the websites are created and desIgned using HTML Markup computer language.
+The Layouts of the websites are created and designed using HTML Markup computer language.
 ### CSS
 The website was styled by using custom CSS.
 ## Google Fonts
