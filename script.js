@@ -1,3 +1,4 @@
+/* All the variables used */
 const billInput = document.querySelector(".bill-input");
 const peopleInput = document.querySelector(".people-input");
 const tipPerPerson = document.getElementById("tip-amount");
@@ -7,29 +8,29 @@ const tipCustom = document.querySelector(".tip-custom");
 const resetBtn = document.querySelector(".reset");
 const error = document.querySelector(".error");
 
-billInput.addEventListener("input", billInputFun);
-peopleInput.addEventListener("input", peopleInputFun);
-
+/*All Values pre-defined*/
 billInput.value = "0.0";
 peopleInput.value = "1";
 tipPerPerson.innerHTML = "$" + (0.0).toFixed(2);
 totalPerPerson.innerHTML = "$" + (0.0).toFixed(2);
-
+/*
+Each tips button added functionality with forEach() method */
 tips.forEach(function (val) {
   val.addEventListener("click", handleClick);
 });
 tipCustom.addEventListener("input", tipInputFun);
-resetBtn.addEventListener("click", reset);
 
+/*Bill event listener and function*/
 let billValue = 0.0;
 let peopleValue = 1;
 let tipValue = 0.15;
-
+billInput.addEventListener("input", billInputFun);
 function billInputFun() {
   billValue = parseFloat(billInput.value);
   calculateTip();
 }
-
+/*Input for people and event listener and error */
+peopleInput.addEventListener("input", peopleInputFun);
 function peopleInputFun() {
   peopleValue = parseFloat(peopleInput.value);
   if (peopleValue <1){
@@ -42,7 +43,8 @@ function peopleInputFun() {
   }
   calculateTip();
 }
-
+/*
+Custom tip calculation function */
 function tipInputFun() {
   tipValue = parseFloat(tipCustom.value / 100);
 
@@ -51,7 +53,7 @@ function tipInputFun() {
   });
   calculateTip();
 }
-
+/*15% button reset color*/
 function handleClick(event) {
   tips.forEach(function (val) {
     val.classList.remove("active-tip");
@@ -62,7 +64,7 @@ function handleClick(event) {
     calculateTip();
   });
 }
-
+/*Tip calculation*/
 function calculateTip() {
   if (peopleValue >= 1) {
     let tipAmount = (billValue * tipValue) / peopleValue;
@@ -71,7 +73,8 @@ function calculateTip() {
     totalPerPerson.innerHTML = "$" + total.toFixed(2);
   }
 }
-
+/*Reset Button*/
+resetBtn.addEventListener("click", reset);
 function reset() {
   billInput.value = "0.0";
   billInputFun();
