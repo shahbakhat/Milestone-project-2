@@ -26,7 +26,7 @@ body {
     text-align: center;
     margin-top: 1.7rem;
     margin-bottom: 2.3rem;
-    width: 2rem;
+    width:50%;
     height: 4rem;
 }
 
@@ -161,13 +161,31 @@ input {
     display: none;
 }
 
+@media only screen and (min-width: 360px) {
+    input {
+        width: 290px;
+        padding: 9px;
+        background-position: 17px 18px;
+    }
+    .tip-calculator {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        border-radius: 1.4rem 1.4rem 0 0;
+    }
+
+}
+
+
 @media only screen and (min-width: 375px) {
     input {
         width: 300px;
         padding: 9px;
         background-position: 17px 18px;
     }
-
     .tip-calculator {
         background-color: white;
         display: flex;
