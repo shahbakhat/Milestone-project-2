@@ -68,7 +68,6 @@ input {
 }
 
 .bill-input {
-    background-image:url('//assets/images/icon-dollar.png');
     margin-bottom: 36px;
     display: flex;
 }
@@ -101,7 +100,6 @@ input {
 }
 
 .people-input {
-    background-image: url('//assets/images/icon-person.png');
     margin-bottom: 2.4rem;
 }
 
