@@ -40,7 +40,7 @@ You can have a Live view of website [here](https://shahbakhat.github.io/Mileston
 
 ---
 ## _SPLITTER responsive website__
-![](assets/css/images/mockup.png)
+![](assets/images/mockup.png)
 As the important criteria of the project the site is fully responsive to different displays. as it is only one page app just a calculator the responsiveness was easy to handle.
 ___
 ## __Design__
